@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/ERIK_SCENE.unity
+- path: Assets/Scenes/MASKIM_SCENE.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
