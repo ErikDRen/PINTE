@@ -32,6 +32,7 @@ public class Park : MonoBehaviour
         _boxCollider.gameObject.SetActive(false);
         _parkToValidate.gameObject.SetActive(false);
         validate.gameObject.SetActive(true);
+        
 
         _playerController.transform.position = _spawnerPos.position;
         _playerController.transform.rotation = new Quaternion(0f, 0f, 0f , 0f);
