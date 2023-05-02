@@ -412,11 +412,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Park (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 5235820179253517181, guid: 1015424eeaca3c7479b7c086f2701f09,
-        type: 3}
-      propertyPath: m_TagString
-      value: Park
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1015424eeaca3c7479b7c086f2701f09, type: 3}
 --- !u!1 &705507993
@@ -688,11 +683,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Park (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 5235820179253517181, guid: 1015424eeaca3c7479b7c086f2701f09,
-        type: 3}
-      propertyPath: m_TagString
-      value: Park
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1015424eeaca3c7479b7c086f2701f09, type: 3}
 --- !u!1 &888615720
@@ -809,7 +799,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 556f0e217b68c364fa41997e20d94919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  validatePark: 0
   _text: {fileID: 1469511761}
 --- !u!1 &963194225
 GameObject:
@@ -912,16 +901,6 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 89011401}
-    - target: {fileID: 3823729012844355619, guid: 860fd343d367ccf45a6d0a0be0570439,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UpdateTurnLeftBool
-      objectReference: {fileID: 0}
-    - target: {fileID: 3823729012844355619, guid: 860fd343d367ccf45a6d0a0be0570439,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UpdateTurnLeftBool
-      objectReference: {fileID: 0}
     - target: {fileID: 3823729013046139560, guid: 860fd343d367ccf45a6d0a0be0570439,
         type: 3}
       propertyPath: m_Pivot.x
@@ -935,7 +914,7 @@ PrefabInstance:
     - target: {fileID: 3823729013046139560, guid: 860fd343d367ccf45a6d0a0be0570439,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3823729013046139560, guid: 860fd343d367ccf45a6d0a0be0570439,
         type: 3}
@@ -1042,16 +1021,6 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 89011401}
-    - target: {fileID: 3823729013815839908, guid: 860fd343d367ccf45a6d0a0be0570439,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UpdateTurnRightBool
-      objectReference: {fileID: 0}
-    - target: {fileID: 3823729013815839908, guid: 860fd343d367ccf45a6d0a0be0570439,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UpdateTurnRightBool
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 860fd343d367ccf45a6d0a0be0570439, type: 3}
 --- !u!1 &1469511759
@@ -1112,7 +1081,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0 / 5
+  m_text: 5 / 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1218,7 +1187,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2740529876839927333
 PrefabInstance:
@@ -1240,7 +1209,7 @@ PrefabInstance:
     - target: {fileID: 2740529877560821556, guid: 7854091f01b668940840b6fbe3c0c0f8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2740529877560821556, guid: 7854091f01b668940840b6fbe3c0c0f8,
         type: 3}
@@ -1297,11 +1266,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Booster
       objectReference: {fileID: 0}
-    - target: {fileID: 2740529877560821557, guid: 7854091f01b668940840b6fbe3c0c0f8,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7854091f01b668940840b6fbe3c0c0f8, type: 3}
 --- !u!1001 &3502221691768882913
@@ -1311,10 +1275,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3502221691216871624, guid: 34caf1a294851b34e9b3d01d5c68bad9,
+        type: 3}
+      propertyPath: _spawnerPos
+      value: 
+      objectReference: {fileID: 2130720879}
+    - target: {fileID: 3502221691216871624, guid: 34caf1a294851b34e9b3d01d5c68bad9,
+        type: 3}
+      propertyPath: _playerController
+      value: 
+      objectReference: {fileID: 89011400}
     - target: {fileID: 3502221691907112922, guid: 34caf1a294851b34e9b3d01d5c68bad9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3502221691907112922, guid: 34caf1a294851b34e9b3d01d5c68bad9,
         type: 3}
@@ -1371,31 +1345,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PikPik
       objectReference: {fileID: 0}
-    - target: {fileID: 3502221691907112923, guid: 34caf1a294851b34e9b3d01d5c68bad9,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6241677983565944881, guid: 34caf1a294851b34e9b3d01d5c68bad9,
-        type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6241677983565944881, guid: 34caf1a294851b34e9b3d01d5c68bad9,
-        type: 3}
-      propertyPath: SubModule.enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6811928844226638174, guid: 34caf1a294851b34e9b3d01d5c68bad9,
-        type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7711118704969569866, guid: 34caf1a294851b34e9b3d01d5c68bad9,
-        type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34caf1a294851b34e9b3d01d5c68bad9, type: 3}
 --- !u!1001 &4239973645949419579
@@ -1408,7 +1357,7 @@ PrefabInstance:
     - target: {fileID: 4239973646751090249, guid: 1d5f32af7c5a33345930e10f0eaaea26,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4239973646751090249, guid: 1d5f32af7c5a33345930e10f0eaaea26,
         type: 3}
@@ -1465,11 +1414,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bumper
       objectReference: {fileID: 0}
-    - target: {fileID: 4239973646751090250, guid: 1d5f32af7c5a33345930e10f0eaaea26,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4239973647307956855, guid: 1d5f32af7c5a33345930e10f0eaaea26,
         type: 3}
       propertyPath: m_Camera
@@ -1507,7 +1451,7 @@ PrefabInstance:
     - target: {fileID: 5235820179253517180, guid: 1015424eeaca3c7479b7c086f2701f09,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5235820179253517180, guid: 1015424eeaca3c7479b7c086f2701f09,
         type: 3}
@@ -1562,11 +1506,6 @@ PrefabInstance:
     - target: {fileID: 5235820179253517181, guid: 1015424eeaca3c7479b7c086f2701f09,
         type: 3}
       propertyPath: m_Name
-      value: Park
-      objectReference: {fileID: 0}
-    - target: {fileID: 5235820179253517181, guid: 1015424eeaca3c7479b7c086f2701f09,
-        type: 3}
-      propertyPath: m_TagString
       value: Park
       objectReference: {fileID: 0}
     m_RemovedComponents: []
