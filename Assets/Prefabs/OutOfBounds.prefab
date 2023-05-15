@@ -58,5 +58,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6ac5b148a042f24ca4952770566abe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTrans: {fileID: 0}
+  playerTrans: {fileID: 2031596046632739414, guid: ef4a68d1113830346bd026a7ea15596e,
+    type: 3}
   spwanTrans: {fileID: 0}

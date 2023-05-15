@@ -58,7 +58,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee423170955932f46b7b5c554395462e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerController: {fileID: 0}
+  _playerController: {fileID: 2031596046632739418, guid: ef4a68d1113830346bd026a7ea15596e,
+    type: 3}
   _spawnerPos: {fileID: 0}
   _boxCollider: {fileID: 5235820177660878360}
   _parkToValidate: {fileID: 5235820177870205296}
