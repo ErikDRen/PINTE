@@ -16,6 +16,13 @@ public class Movement : MonoBehaviour
     private void Start()
     {
         _view = GetComponent<PhotonView>();
+        if (!_view.IsMine)
+        {
+            GetComponent<Rigidbody>().useGravity = false;
+            GetComponent<PlayerController>().enabled = false;
+            GetComponent<Movement>().enabled = false;
+            GetComponentInChildren<Camera>().enabled = false;
+        }
     }
     private void Update()
     {

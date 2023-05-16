@@ -12,13 +12,22 @@ public class SpawnPlayer : MonoBehaviour
     [SerializeField] float minX;
     [SerializeField] float minZ;
 
+    PhotonView _view;
     public static SpawnPlayer Instance;
-    public GameObject PlayerInstance;
+    public List<GameObject> PlayerInstance;
 
     // Start is called before the first frame update
     void Start()
     {
+        /*_view = GetComponent<PhotonView>();
+        if (!_view.IsMine)
+        {
+            SpawnPlayer.Instance.GetComponent<Rigidbody>().useGravity = false;
+            SpawnPlayer.Instance.GetComponent<PlayerController>().enabled = false;
+            SpawnPlayer.Instance.GetComponent<Movement>().enabled = false;
+            SpawnPlayer.Instance.GetComponent<Camera>().enabled = false;
 
+        }*/
     }
 
     private void Awake()
@@ -33,7 +42,8 @@ public class SpawnPlayer : MonoBehaviour
         }
 
         Vector3 randomPosition = new Vector3(Random.Range(maxX, minX), 1.77f, Random.Range(maxZ, minZ));
-        PlayerInstance = PhotonNetwork.Instantiate(_playerPrefab.name, randomPosition, Quaternion.identity);
+        PlayerInstance = new List<GameObject>();
+        PlayerInstance.Add(PhotonNetwork.Instantiate(_playerPrefab.name, randomPosition, Quaternion.identity));
     }
 
     // Update is called once per frame

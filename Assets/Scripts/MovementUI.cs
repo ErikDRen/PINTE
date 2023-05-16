@@ -9,7 +9,7 @@ public class MovementUI : MonoBehaviour
     Movement _playerMovement; 
     private void Start()
     {
-        _playerMovement = SpawnPlayer.Instance.PlayerInstance.GetComponent<Movement>();
+        _playerMovement = SpawnPlayer.Instance.PlayerInstance[0].GetComponent<Movement>();
     }
 
     public void GetTurnLeft(bool isPressed)
