@@ -1,17 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class OutOfBounds : MonoBehaviour
 {
-
-    [SerializeField] Transform playerTrans;
     [SerializeField] Transform spwanTrans;
-
+    PhotonView _view;
     private void OnTriggerEnter(Collider collision)
     {
         Debug.Log("AAAAAAAAAAAAaaaaaaaaaaaaaaaaa............");
-        playerTrans.position = spwanTrans.position;
-        playerTrans.rotation = spwanTrans.rotation;
+        collision.transform.position = spwanTrans.position;
+        collision.transform.rotation = spwanTrans.rotation;
     }
 }

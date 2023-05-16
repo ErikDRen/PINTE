@@ -13,16 +13,17 @@ public class Destroy : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            StartCoroutine(Explode());
+
+            StartCoroutine(Explode(collision));
             _explosion.Play();
             //collision.gameObject.SetActive(false);
         }
     }
 
-    IEnumerator Explode()
+    IEnumerator Explode(Collision collision)
     {
 
         yield return new WaitForSeconds(0.5f);
-        _playerController.transform.position = _spawnerPos.position;
+        collision.transform.position = _spawnerPos.position;
     }
 }
