@@ -13,29 +13,27 @@ public class Park : MonoBehaviour
     [SerializeField] Canvas validate;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        initalSpeed = _playerController.speed;
-    }
+
 
     private void OnTriggerEnter(Collider other)
     {
-        _playerController.speed = 0f;
-        StartCoroutine(ValidatePark());
+        initalSpeed = other.gameObject.GetComponent<PlayerController>().speed;
+        other.gameObject.GetComponent<PlayerController>().speed = 0;
+        StartCoroutine(ValidatePark(other));
     }
 
 
-    IEnumerator ValidatePark()
+    IEnumerator ValidatePark(Collider other)
     {
         yield return new WaitForSeconds(1.5f);
 
         _boxCollider.gameObject.SetActive(false);
         _parkToValidate.gameObject.SetActive(false);
         validate.gameObject.SetActive(true);
-        
 
-        _playerController.transform.position = _spawnerPos.position;
-        _playerController.transform.rotation = new Quaternion(0f, 0f, 0f , 0f);
-        _playerController.speed = initalSpeed;
+
+        other.transform.position = _spawnerPos.position;
+        other.transform.rotation = new Quaternion(0f, 0f, 0f , 0f);
+        other.gameObject.GetComponent<PlayerController>().speed = initalSpeed;
     }
 }
