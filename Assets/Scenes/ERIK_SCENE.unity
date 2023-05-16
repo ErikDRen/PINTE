@@ -652,6 +652,51 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3823729012844355619, guid: 860fd343d367ccf45a6d0a0be0570439,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3823729012844355619, guid: 860fd343d367ccf45a6d0a0be0570439,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3823729012844355619, guid: 860fd343d367ccf45a6d0a0be0570439,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1241224755}
+    - target: {fileID: 3823729012844355619, guid: 860fd343d367ccf45a6d0a0be0570439,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1241224755}
+    - target: {fileID: 3823729012844355619, guid: 860fd343d367ccf45a6d0a0be0570439,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GetTurnLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 3823729012844355619, guid: 860fd343d367ccf45a6d0a0be0570439,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GetTurnLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 3823729012844355619, guid: 860fd343d367ccf45a6d0a0be0570439,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MovementUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3823729012844355619, guid: 860fd343d367ccf45a6d0a0be0570439,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MovementUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3823729012844355619, guid: 860fd343d367ccf45a6d0a0be0570439,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3823729013046139560, guid: 860fd343d367ccf45a6d0a0be0570439,
         type: 3}
       propertyPath: m_Pivot.x
@@ -762,8 +807,71 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovementCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3823729013815839908, guid: 860fd343d367ccf45a6d0a0be0570439,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3823729013815839908, guid: 860fd343d367ccf45a6d0a0be0570439,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3823729013815839908, guid: 860fd343d367ccf45a6d0a0be0570439,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1241224755}
+    - target: {fileID: 3823729013815839908, guid: 860fd343d367ccf45a6d0a0be0570439,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1241224755}
+    - target: {fileID: 3823729013815839908, guid: 860fd343d367ccf45a6d0a0be0570439,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GetTurnRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 3823729013815839908, guid: 860fd343d367ccf45a6d0a0be0570439,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GetTurnRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 3823729013815839908, guid: 860fd343d367ccf45a6d0a0be0570439,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MovementUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3823729013815839908, guid: 860fd343d367ccf45a6d0a0be0570439,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MovementUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3823729013815839908, guid: 860fd343d367ccf45a6d0a0be0570439,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 860fd343d367ccf45a6d0a0be0570439, type: 3}
+--- !u!1 &1241224754 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3823729013046139564, guid: 860fd343d367ccf45a6d0a0be0570439,
+    type: 3}
+  m_PrefabInstance: {fileID: 1241224753}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1241224755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241224754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17f5df72a52f0834787f31b494959d82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1469511759
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,8 +1109,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _playerController
       value: 
-      objectReference: {fileID: 2031596046632739418, guid: ef4a68d1113830346bd026a7ea15596e,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 3502221691907112922, guid: 34caf1a294851b34e9b3d01d5c68bad9,
         type: 3}
       propertyPath: m_RootOrder
