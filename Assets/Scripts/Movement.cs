@@ -27,16 +27,16 @@ public class Movement : MonoBehaviour
     private void Update()
     {
         if (_view.IsMine) {
-            Debug.Log("Here");
+            //Debug.Log("Here");
             if (isTurningLeft == true)
             {
-                Debug.Log("de dans l");
+                //Debug.Log("de dans l");
                 transform.Rotate(0f, -(_turningSpeed * Time.deltaTime), 0f);
             }
 
             if (isTurningRight == true)
             {
-                Debug.Log("de dans r");
+                //Debug.Log("de dans r");
                 transform.Rotate(0f, _turningSpeed * Time.deltaTime, 0f);
             }
         }
@@ -45,14 +45,15 @@ public class Movement : MonoBehaviour
 
     public void UpdateTurnRightBool(bool isDown)
     {
-        Debug.Log("dehors");
+       
+        //Debug.Log("dehors");
         isTurningRight = isDown;
-        Debug.Log(isTurningRight + "right");
+        //Debug.Log(isTurningRight + "right");
     }
     
     public void UpdateTurnLeftBool(bool isDown)
     {
         isTurningLeft = isDown;
-        Debug.Log(isTurningLeft + "left");
+        //Debug.Log(isTurningLeft + "left");
     }
 }

@@ -14,6 +14,7 @@ public class SpawnPlayer : MonoBehaviour
 
     PhotonView _view;
     public static SpawnPlayer Instance;
+    public static Vector3 randomPosition;
     public List<GameObject> PlayerInstance;
 
     // Start is called before the first frame update
@@ -41,7 +42,7 @@ public class SpawnPlayer : MonoBehaviour
             Destroy(gameObject);
         }
 
-        Vector3 randomPosition = new Vector3(Random.Range(maxX, minX), 1.77f, Random.Range(maxZ, minZ));
+        randomPosition = new Vector3(Random.Range(maxX, minX), 1.77f, Random.Range(maxZ, minZ));
         PlayerInstance = new List<GameObject>();
         PlayerInstance.Add(PhotonNetwork.Instantiate(_playerPrefab.name, randomPosition, Quaternion.identity));
     }

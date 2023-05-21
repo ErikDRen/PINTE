@@ -1,25 +1,48 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using UnityEngine.UIElements;
 
 public class Park : MonoBehaviour
 {
 
-    [SerializeField] PlayerController _playerController;
+
+
     private float initalSpeed = 0f;
-    [SerializeField] Transform _spawnerPos;
+    Vector3 _spawnerPos;
+
+
     [SerializeField] BoxCollider _boxCollider;
     [SerializeField] Canvas _parkToValidate;
     [SerializeField] Canvas validate;
+    /**/
+
+    SpawnPlayer _spawnPlayer;
+    PhotonView _view;
+
+
+    PlayerController _playerController;
 
     // Start is called before the first frame update
-
+    private void Start()
+    {
+        this._view = GetComponent<PhotonView>();
+        _playerController = SpawnPlayer.Instance.PlayerInstance[0].GetComponent<PlayerController>();
+        _spawnerPos = SpawnPlayer.randomPosition;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        initalSpeed = other.gameObject.GetComponent<PlayerController>().speed;
-        other.gameObject.GetComponent<PlayerController>().speed = 0;
-        StartCoroutine(ValidatePark(other));
+
+        //Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa");
+        //if (_view.IsMine)
+        //{
+            initalSpeed = _playerController.speed;
+            _playerController.speed = 0;
+            StartCoroutine(ValidatePark(other));
+        //}
+
     }
 
 
@@ -32,8 +55,8 @@ public class Park : MonoBehaviour
         validate.gameObject.SetActive(true);
 
 
-        other.transform.position = _spawnerPos.position;
+        other.transform.position = _spawnerPos;
         other.transform.rotation = new Quaternion(0f, 0f, 0f , 0f);
-        other.gameObject.GetComponent<PlayerController>().speed = initalSpeed;
+        _playerController.speed = initalSpeed;
     }
 }
