@@ -12,13 +12,16 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (SpawnPlayer.Instance.PlayerInstance.Count < 2)
+        Debug.Log(PhotonNetwork.CurrentRoom.Players.Count);
+        if (PhotonNetwork.CurrentRoom.Players.Count < 2)
         {
-            speed = 0;
+            SpawnPlayer.Instance.PlayerInstance[0].GetComponent<PlayerController>().speed = 0;
+            Debug.Log("vitesse 0");
         }
         else
         {
-            speed = 10;
+            SpawnPlayer.Instance.PlayerInstance[0].GetComponent<PlayerController>().speed = 10;
+            Debug.Log("vitesse 10");
         }
         Vector3 speedY = transform.forward * speed;
         speedY.y = _rb.velocity.y;
