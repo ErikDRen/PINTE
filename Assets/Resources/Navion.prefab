@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 2031596046632739419}
   - component: {fileID: 2031596046632739416}
   - component: {fileID: 4982515789964203475}
-  - component: {fileID: -5929308189638572443}
+  - component: {fileID: 8263982025460407121}
   m_Layer: 0
   m_Name: Navion
   m_TagString: Player
@@ -117,7 +117,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2031596046632739410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.77, z: -34}
+  m_LocalPosition: {x: 0, y: 2.35, z: -38.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -265,11 +265,11 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
-  - {fileID: -5929308189638572443}
+  - {fileID: 8263982025460407121}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &-5929308189638572443
+--- !u!114 &8263982025460407121
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

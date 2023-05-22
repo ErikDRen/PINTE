@@ -45,10 +45,10 @@ public class SpawnPlayer : MonoBehaviour
                 _playerPrefab = _tuture;
                 break;
             case 2 :
-                _playerPrefab = _camtar;
+                _playerPrefab = _navion;
                 break;
             case 3 :
-                _playerPrefab = _navion;
+                _playerPrefab = _camtar;
                 break;
         }
         if (Instance == null)

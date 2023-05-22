@@ -9,9 +9,6 @@ public class PlayerController : MonoBehaviour
     public float speed = 10.0f;
     [SerializeField] Rigidbody _rb;
 
-    public int _vehiculeType; //1=tuture    2=navion    3=camtar
-
-
     // Update is called once per frame
     void FixedUpdate()
     {
