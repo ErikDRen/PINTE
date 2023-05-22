@@ -42,6 +42,7 @@ public class SpawnPlayer : MonoBehaviour
                 _playerPrefab = _camtar;
                 break;
         }
+
         if (Instance == null)
         {
             Instance = this;
@@ -55,29 +56,6 @@ public class SpawnPlayer : MonoBehaviour
         PlayerInstance = new List<GameObject>();
         PlayerInstance.Add(PhotonNetwork.Instantiate(_playerPrefab.name, randomPosition, Quaternion.identity));
 
-        
-    }
-
-    void Start()
-    {
-        _playerController = PlayerInstance[0].GetComponent<PlayerController>();
-        iniatalSpeed = _playerController.speed;
-    }
-
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (PlayerInstance.Count <= 2)
-        {
-            _playerController.speed = 0;
-        } 
-        else
-        {
-            _playerController.speed = iniatalSpeed;
-        }
-        
 
     }
-}
+}    
