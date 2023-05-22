@@ -17,6 +17,9 @@ public class SpawnPlayer : MonoBehaviour
     [SerializeField] float minX;
     [SerializeField] float minZ;
 
+    float iniatalSpeed = 0;
+    PlayerController _playerController;
+
     PhotonView _view;
     public static SpawnPlayer Instance;
     public static Vector3 randomPosition;
@@ -24,30 +27,18 @@ public class SpawnPlayer : MonoBehaviour
     public int VehiculeType = 1;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        /*_view = GetComponent<PhotonView>();
-        if (!_view.IsMine)
-        {
-            SpawnPlayer.Instance.GetComponent<Rigidbody>().useGravity = false;
-            SpawnPlayer.Instance.GetComponent<PlayerController>().enabled = false;
-            SpawnPlayer.Instance.GetComponent<Movement>().enabled = false;
-            SpawnPlayer.Instance.GetComponent<Camera>().enabled = false;
-
-        }*/
-    }
 
     private void Awake()
     {
         switch (VehiculeType)
         {
-            case 1 :
+            case 1:
                 _playerPrefab = _tuture;
                 break;
-            case 2 :
+            case 2:
                 _playerPrefab = _navion;
                 break;
-            case 3 :
+            case 3:
                 _playerPrefab = _camtar;
                 break;
         }
@@ -63,11 +54,30 @@ public class SpawnPlayer : MonoBehaviour
         randomPosition = new Vector3(Random.Range(maxX, minX), 1.77f, Random.Range(maxZ, minZ));
         PlayerInstance = new List<GameObject>();
         PlayerInstance.Add(PhotonNetwork.Instantiate(_playerPrefab.name, randomPosition, Quaternion.identity));
+
+        
     }
+
+    void Start()
+    {
+        _playerController = PlayerInstance[0].GetComponent<PlayerController>();
+        iniatalSpeed = _playerController.speed;
+    }
+
+
 
     // Update is called once per frame
     void Update()
     {
+        if (PlayerInstance.Count <= 2)
+        {
+            _playerController.speed = 0;
+        } 
+        else
+        {
+            _playerController.speed = iniatalSpeed;
+        }
         
+
     }
 }
