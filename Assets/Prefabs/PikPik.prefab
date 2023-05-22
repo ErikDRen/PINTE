@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 3502221691907112923}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3967914744779853681}
@@ -285,5 +285,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _explosion: {fileID: 6241677983565944881}
-  _playerController: {fileID: 0}
   _spawnerPos: {fileID: 0}
