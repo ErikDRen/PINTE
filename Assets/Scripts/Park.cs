@@ -31,7 +31,7 @@ public class Park : MonoBehaviour
     {
 
         //Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa");
-        if (_view.IsMine)
+        if (other.gameObject.GetComponent<PhotonView>().IsMine)
         {
             StartCoroutine(ValidatePark(other));
         }
