@@ -41,6 +41,7 @@ public class Park : MonoBehaviour
 
     IEnumerator ValidatePark(Collider other)
     {
+        _playerController.IsParked = true;
         initalSpeed = _playerController.speed;
         _playerController.speed = 0;
 
@@ -53,6 +54,7 @@ public class Park : MonoBehaviour
 
         other.transform.position = _spawnerPos.position;
         other.transform.rotation = new Quaternion(0f, 0f, 0f , 0f);
+        _playerController.IsParked = false;
         _playerController.speed = initalSpeed;
     }
 }
