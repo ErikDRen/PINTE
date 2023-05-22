@@ -10,7 +10,6 @@ public class Park : MonoBehaviour
 
 
     private float initalSpeed = 0f;
-    Vector3 _spawnerPos;
 
 
     [SerializeField] BoxCollider _boxCollider;
@@ -18,7 +17,8 @@ public class Park : MonoBehaviour
     [SerializeField] Canvas validate;
     /**/
 
-    SpawnPlayer _spawnPlayer;
+    [SerializeField] Transform _spawnerPos;
+
     PhotonView _view;
 
 
@@ -29,7 +29,6 @@ public class Park : MonoBehaviour
     {
         _view = SpawnPlayer.Instance.PlayerInstance[0].GetComponent<PhotonView>(); ;
         _playerController = SpawnPlayer.Instance.PlayerInstance[0].GetComponent<PlayerController>();
-        _spawnerPos = SpawnPlayer.randomPosition;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -55,7 +54,7 @@ public class Park : MonoBehaviour
         validate.gameObject.SetActive(true);
 
 
-        other.transform.position = _spawnerPos;
+        other.transform.position = _spawnerPos.position;
         other.transform.rotation = new Quaternion(0f, 0f, 0f , 0f);
         _playerController.speed = initalSpeed;
     }

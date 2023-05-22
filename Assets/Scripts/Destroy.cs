@@ -5,8 +5,6 @@ using UnityEngine;
 public class Destroy : MonoBehaviour
 {
     [SerializeField] ParticleSystem _explosion;
-
-    [SerializeField] PlayerController _playerController;
     [SerializeField] Transform _spawnerPos;
 
     private void OnCollisionEnter(Collision collision)
