@@ -6,6 +6,7 @@ using Photon.Pun;
 public class PlayerController : MonoBehaviour
 {
 
+    public bool IsBoost = false;
     public bool IsParked = false;
     public float speed = 10.0f;
     [SerializeField] Rigidbody _rb;
@@ -14,9 +15,9 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         Debug.Log(PhotonNetwork.CurrentRoom.Players.Count);
-        if (IsParked == false)
+        if (IsParked == false && IsBoost == false)
         {
-            if (PhotonNetwork.CurrentRoom.Players.Count < 2)
+            if (PhotonNetwork.CurrentRoom.Players.Count < 4)
             {
                 SpawnPlayer.Instance.PlayerInstance[0].GetComponent<PlayerController>().speed = 0;
                 Debug.Log("vitesse 0");

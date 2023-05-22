@@ -18,8 +18,10 @@ public class Booster : MonoBehaviour
 
     IEnumerator BoostDuration(Collider other)
     {
+        SpawnPlayer.Instance.PlayerInstance[0].GetComponent<PlayerController>().IsBoost = true;
         yield return new WaitForSeconds(1.5f);
         other.gameObject.GetComponent<PlayerController>().speed = initalSpeed;
+        SpawnPlayer.Instance.PlayerInstance[0].GetComponent<PlayerController>().IsBoost = false;
     }
 }
 
