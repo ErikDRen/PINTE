@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -22464,7 +22464,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _navion
       value: 
-      objectReference: {fileID: 2031596046632739410, guid: e7564fed36b2aac44b40a772a72bedf3,
+      objectReference: {fileID: 2031596046632739410, guid: 05bf79c2a4fb6034d95a8cb55f72f8f7,
         type: 3}
     - target: {fileID: 5001415741863459225, guid: 655e7da2de10a1f4bb4c1d95db323ab4,
         type: 3}

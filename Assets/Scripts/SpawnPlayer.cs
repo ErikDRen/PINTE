@@ -30,6 +30,7 @@ public class SpawnPlayer : MonoBehaviour
 
     private void Awake()
     {
+        _vehiculeType = Random.Range(1, 3);
         switch (_vehiculeType)
         {
             case 1:
