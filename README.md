@@ -9,7 +9,7 @@ navion: plane + maniabilité aérienne
 5/10 joueurs par game
 
 # maps:
-prio 3 maps gratos
+prio 3 maps
 
 # contenue de maps:
 boosters, piques, tremplins, rond de boost en l'air, mur qui tue tchikita
