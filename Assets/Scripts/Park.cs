@@ -27,7 +27,7 @@ public class Park : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        this._view = GetComponent<PhotonView>();
+        _view = SpawnPlayer.Instance.PlayerInstance[0].GetComponent<PhotonView>(); ;
         _playerController = SpawnPlayer.Instance.PlayerInstance[0].GetComponent<PlayerController>();
         _spawnerPos = SpawnPlayer.randomPosition;
     }
@@ -36,12 +36,12 @@ public class Park : MonoBehaviour
     {
 
         //Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa");
-        //if (_view.IsMine)
-        //{
+        if (_view.IsMine)
+        {
             initalSpeed = _playerController.speed;
             _playerController.speed = 0;
             StartCoroutine(ValidatePark(other));
-        //}
+        }
 
     }
 
