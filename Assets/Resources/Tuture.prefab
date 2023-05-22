@@ -218,7 +218,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   _rb: {fileID: 2031596046632739413}
-  _vehiculeType: 1
 --- !u!114 &2031596046632739419
 MonoBehaviour:
   m_ObjectHideFlags: 0

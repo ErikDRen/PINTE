@@ -24,13 +24,13 @@ public class SpawnPlayer : MonoBehaviour
     public static SpawnPlayer Instance;
     public static Vector3 randomPosition;
     public List<GameObject> PlayerInstance;
-    public int VehiculeType = 1;
+    private int _vehiculeType = 1;
 
     // Start is called before the first frame update
 
     private void Awake()
     {
-        switch (VehiculeType)
+        switch (_vehiculeType)
         {
             case 1:
                 _playerPrefab = _tuture;
