@@ -15,13 +15,9 @@ public class Park : MonoBehaviour
     [SerializeField] BoxCollider _boxCollider;
     [SerializeField] Canvas _parkToValidate;
     [SerializeField] Canvas validate;
-    /**/
-
     [SerializeField] Transform _spawnerPos;
 
     PhotonView _view;
-
-
     PlayerController _playerController;
 
     // Start is called before the first frame update
@@ -37,8 +33,6 @@ public class Park : MonoBehaviour
         //Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa");
         if (_view.IsMine)
         {
-            initalSpeed = _playerController.speed;
-            _playerController.speed = 0;
             StartCoroutine(ValidatePark(other));
         }
 
@@ -47,6 +41,9 @@ public class Park : MonoBehaviour
 
     IEnumerator ValidatePark(Collider other)
     {
+        initalSpeed = _playerController.speed;
+        _playerController.speed = 0;
+
         yield return new WaitForSeconds(1.5f);
 
         _boxCollider.gameObject.SetActive(false);

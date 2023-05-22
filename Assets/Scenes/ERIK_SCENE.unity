@@ -1481,7 +1481,7 @@ PrefabInstance:
     - target: {fileID: 5001415741863459225, guid: 655e7da2de10a1f4bb4c1d95db323ab4,
         type: 3}
       propertyPath: VehiculeType
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7286631022467632548, guid: 655e7da2de10a1f4bb4c1d95db323ab4,
         type: 3}
