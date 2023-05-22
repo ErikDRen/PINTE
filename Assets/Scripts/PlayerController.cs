@@ -12,14 +12,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (SpawnPlayer.Instance.PlayerInstance.Count < 2)
-        {
-            speed = 0;
-        }
-        else
-        {
-            speed = 10;
-        }
+        
         Vector3 speedY = transform.forward * speed;
         speedY.y = _rb.velocity.y;
         _rb.velocity = speedY; 

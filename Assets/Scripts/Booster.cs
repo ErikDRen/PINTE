@@ -12,7 +12,7 @@ public class Booster : MonoBehaviour
         //Debug.Log("HEEEEEEEEEEY");
         //_playerController.SetSpeed(_playerController.GetSpeed() * 1.5f);
         initalSpeed = other.gameObject.GetComponent<PlayerController>().speed;
-        other.gameObject.GetComponent<PlayerController>().speed *= 1.5f;
+        other.gameObject.GetComponent<PlayerController>().speed *= 1.7f;
         StartCoroutine(BoostDuration(other));
     }
 
