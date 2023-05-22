@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
         Debug.Log(PhotonNetwork.CurrentRoom.Players.Count);
         if (IsParked == false && IsBoost == false)
         {
-            if (PhotonNetwork.CurrentRoom.Players.Count < 4)
+            if (PhotonNetwork.CurrentRoom.Players.Count < 1)
             {
                 SpawnPlayer.Instance.PlayerInstance[0].GetComponent<PlayerController>().speed = 0;
                 Debug.Log("vitesse 0");
