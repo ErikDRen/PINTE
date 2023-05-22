@@ -5,7 +5,12 @@ using Photon.Pun;
 
 public class SpawnPlayer : MonoBehaviour
 {
-    [SerializeField] GameObject _playerPrefab;
+
+    [SerializeField] private GameObject _tuture;
+    [SerializeField] private GameObject _camtar;
+    [SerializeField] private GameObject _navion;
+
+    private GameObject _playerPrefab;
 
     [SerializeField] float maxX;
     [SerializeField] float maxZ;
@@ -16,6 +21,7 @@ public class SpawnPlayer : MonoBehaviour
     public static SpawnPlayer Instance;
     public static Vector3 randomPosition;
     public List<GameObject> PlayerInstance;
+    public int VehiculeType = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +39,18 @@ public class SpawnPlayer : MonoBehaviour
 
     private void Awake()
     {
+        switch (VehiculeType)
+        {
+            case 1 :
+                _playerPrefab = _tuture;
+                break;
+            case 2 :
+                _playerPrefab = _camtar;
+                break;
+            case 3 :
+                _playerPrefab = _navion;
+                break;
+        }
         if (Instance == null)
         {
             Instance = this;
