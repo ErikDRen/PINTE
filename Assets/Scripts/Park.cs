@@ -9,7 +9,7 @@ public class Park : MonoBehaviour
 
 
 
-    private float initalSpeed = 0f;
+    private float initalSpeed = 10f;
 
 
     [SerializeField] BoxCollider _boxCollider;

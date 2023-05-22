@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 882eb2246f8c1c04b94e81c4e4798e8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForceY: 15
+  jumpForceY: 13
 --- !u!1 &4239973646237179240
 GameObject:
   m_ObjectHideFlags: 0
